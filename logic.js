@@ -23,6 +23,7 @@ function displayGifs() {
         method: "GET"
     })
     .then(function (response) {
+    	$(".displayGifsHere").empty();
         var results = response.data;
         for (var i = 0; i < results.length; i++) {
             var gifDiv = $("<div class='item'>");
@@ -30,7 +31,7 @@ function displayGifs() {
             var p = $("<p>").text("Rating: " + rating);
             var gifImage = $("<img>")
             gifImage.attr("src", results[i].images.fixed_height_small_still.url); 
-            gifImage.attr("data-still",results[i].images.fixed_height_small_still.url); 
+            gifImage.attr("data-still",results[i].images.fixed_height_small_still.url);
             gifImage.attr("data-animate",results[i].images.fixed_height_small.url); 
             gifImage.attr("data-state", "still"); 
             gifImage.addClass("gif");
@@ -53,9 +54,17 @@ function startAndStop() {
       }
     }
 
+// function addNewButton() {
+// 	event.preventDefault();
+// 	var input = $(".newButtonForm").val();
+// 	console.log(input);
+// 	natureTopics.push(input);
+// 	renderButtons();
+// }
 
 //------------------------------call functions---------------------------------
 renderButtons();
   $(document).on("click", ".natureButton", displayGifs);
   $(document).on("click", ".gif", startAndStop);
+  //$(document).on("click", ".newButtonForm", addNewButton);
 
