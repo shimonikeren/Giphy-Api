@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+}
+
+
+/*body {
+   background-image:url("tree.jpg");
+   background-repeat:no-repeat; 
+   background-size: 100%; 
+}
+*/
+img {
+	height: 150px;
+	width: 150px;
+	border: 1px solid grey;
+}
+
+/*.gif {
+	float: left;
+	margin: 3px;
+}
+*/
