@@ -54,17 +54,17 @@ function startAndStop() {
       }
     }
 
-// function addNewButton() {
-// 	event.preventDefault();
-// 	var input = $(".newButtonForm").val();
-// 	console.log(input);
-// 	natureTopics.push(input);
-// 	renderButtons();
-// }
+function addNewButton() {
+	event.preventDefault();
+	var input = $(".addButton").val();
+	console.log(input);
+	natureTopics.push(input);
+	renderButtons();
+}
 
 //------------------------------call functions---------------------------------
 renderButtons();
   $(document).on("click", ".natureButton", displayGifs);
   $(document).on("click", ".gif", startAndStop);
-  //$(document).on("click", ".newButtonForm", addNewButton);
+  $(document).on("click", ".submit", addNewButton);
 
