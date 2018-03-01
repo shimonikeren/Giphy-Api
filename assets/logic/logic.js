@@ -26,7 +26,8 @@ function displayGifs() {
     	$(".displayGifsHere").empty();
         var results = response.data;
         for (var i = 0; i < results.length; i++) {
-            var gifDiv = $("<div class='item'>");
+            var gifDiv = $("<div>"); 
+            gifDiv.addClass("gifDiv");
             var rating = results[i].rating;
             var p = $("<p>").text("Rating: " + rating);
             var gifImage = $("<img>")
@@ -35,7 +36,6 @@ function displayGifs() {
             gifImage.attr("data-animate",results[i].images.fixed_height_small.url); 
             gifImage.attr("data-state", "still"); 
             gifImage.addClass("gif");
-
             gifDiv.append(p);
             gifDiv.append(gifImage);
             $(".displayGifsHere").prepend(gifDiv);
@@ -64,7 +64,7 @@ function addNewButton() {
 
 //------------------------------call functions---------------------------------
 renderButtons();
-  $(document).on("click", ".natureButton", displayGifs);
-  $(document).on("click", ".gif", startAndStop);
-  $(document).on("click", ".submit", addNewButton);
+$(document).on("click", ".natureButton", displayGifs);
+$(document).on("click", ".gif", startAndStop);
+$(document).on("click", ".submit", addNewButton);
 

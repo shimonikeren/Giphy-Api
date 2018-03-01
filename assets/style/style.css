@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+	align-content: center;
+	color: white;
+	font-family: 'Karma', serif;
+}
+
+body {
+   background-image:url("../images/ocean.jpg");
+   background-repeat:no-repeat; 
+   background-size: cover; 
+}
+
+.title {
+	text-align: center;
+	font-size: 36px;
+	padding: 40px 20px 0 20px;
+}
+
+.buttonsDiv {
+	text-align: center;
+	padding: 20px;
+}
+
+img {
+	height: 150px;
+	width: 150px;
+	border: 2px solid grey;
+}
+
+p {
+	/*color: black;*/
+	text-align: center;
+	padding-top: 5px;
+}
+
+button {
+	margin: 2px;
+}
+
+.gifDiv {
+	float: left;
+	margin: 5px;
+	border: 1px dotted white;
+}
+
+footer {
+	text-align: center;
+}
