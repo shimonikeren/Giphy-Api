@@ -1,5 +1,8 @@
 # Nature gifs, Giphy API
 
+
+![Alt Text](https://media.giphy.com/media/2csuIJj6TmuKA/giphy.gif)
+
 **Check out my Giphy API!**
 [Click Here](https://shimonikeren.github.io/Nature-Giphy/)
 
