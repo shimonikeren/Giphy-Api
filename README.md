@@ -1,4 +1,4 @@
-# Giphy-Api
+# Nature gifs, Giphy API
 
 **Check out my Giphy API!**
 [Click Here](https://shimonikeren.github.io/Nature-Giphy/)
